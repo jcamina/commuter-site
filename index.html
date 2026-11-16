@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Commuter Support</title>
+<meta name="description" content="Commuter plans the trip into New York City and back: drive or walk to the best Long Island Rail Road or Metro-North station, ride in, and take the subway or a bus to the door, with live MTA times.">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<style>
+  :root { --bg: #f5f5f7; --card: #ffffff; --text: #1d1d1f; --secondary: #6e6e73; --accent: #0a5fd9; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0b0e12; --card: #161a20; --text: #f2f5f7; --secondary: #9aa5ad; --accent: #5ea2ff; }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); line-height: 1.6;
+         font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+         -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 56px 16px 48px; }
+  header { text-align: center; }
+  .icon { width: 112px; height: 112px; border-radius: 25px; box-shadow: 0 8px 28px rgba(10, 95, 217, 0.18); }
+  h1 { margin-top: 20px; font-size: 36px; font-weight: 700; letter-spacing: -0.02em; }
+  .subtitle { margin-top: 2px; font-size: 19px; color: var(--accent); font-weight: 600; }
+  .lede { margin: 16px auto 0; max-width: 520px; font-size: 17px; color: var(--secondary); }
+  h2 { margin-top: 40px; font-size: 22px; font-weight: 700; }
+  .card { margin-top: 12px; padding: 18px 20px; background: var(--card); border-radius: 16px; }
+  .card h3 { font-size: 17px; font-weight: 600; }
+  .card h3 + p { margin-top: 4px; }
+  .card + .card { margin-top: 10px; }
+  p { font-size: 16px; }
+  .card p + h3 { margin-top: 16px; }
+  .foot { margin-top: 40px; font-size: 14px; color: var(--secondary); text-align: center; }
+  .foot p + p { margin-top: 8px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img class="icon" src="icon.png" alt="">
+    <h1>Commuter</h1>
+    <p class="subtitle">Drive, Train, Subway</p>
+    <p class="lede">Commuter plans the trip into New York City and back: drive or walk to the best Long Island Rail Road or Metro-North station, ride in, and take the subway or a bus to the door, with live MTA times and track numbers.</p>
+  </header>
+
+  <h2>Get Help</h2>
+  <div class="card">
+    <h3>In the TestFlight Beta</h3>
+    <p>Take a screenshot in Commuter and choose Share Beta Feedback, or open TestFlight, choose Commuter, then Send Beta Feedback.</p>
+    <h3>Anyone</h3>
+    <p><a href="https://github.com/jcamina/commuter-site/issues/new">Report a problem or ask a question</a> on GitHub. Say what you planned (the starting point, destination and time) and what you expected to see.</p>
+  </div>
+
+  <h2>Common Questions</h2>
+  <div class="card">
+    <h3>Where does Commuter work?</h3>
+    <p>Around New York City: the Long Island Rail Road, Metro-North, the subway and the city's buses. From farther away, choose a starting point in that area.</p>
+  </div>
+  <div class="card">
+    <h3>Why does it ask for Always location?</h3>
+    <p>So a trip you start can keep following you with Commuter closed, to see when you leave, reach the station and arrive, and to keep its alerts and Live Activity current. Notice Where I Park uses it too. With While Using, a started trip still works while Commuter is open, and iOS shows the location indicator.</p>
+  </div>
+  <div class="card">
+    <h3>Why didn't an alert arrive?</h3>
+    <p>Alerts come only for a trip you start. Check that notifications are on for Commuter in Settings, and which alerts are on in Commuter's Profile, under Alerts.</p>
+  </div>
+  <div class="card">
+    <h3>How current are the times?</h3>
+    <p>Schedules come from the MTA and update every day by default (Profile, Schedules). Live times update every 30 seconds while Commuter is open and can run a minute or more behind the trains.</p>
+  </div>
+
+  <div class="foot">
+    <p><a href="privacy.html">Privacy Policy</a></p>
+    <p>Commuter is an independent app. It is not affiliated with, endorsed by or sponsored by the Metropolitan Transportation Authority (MTA), the Long Island Rail Road, Metro-North Railroad or New York City Transit.</p>
+  </div>
+</div>
+</body>
+</html>
